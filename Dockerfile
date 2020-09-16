@@ -2,20 +2,27 @@ FROM continuumio/miniconda3:latest
 
 LABEL maintainer="Seignovert"
 
-# Install shared libs and rsync
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Install shared libs and dependencies
 RUN apt-get -qq update && \
     apt-get install -y rsync \
     libglu1 \
-    libgl1
+    libgl1 \
+    bc \
+    xorg \
+    binutils
 
 # Set ENV variables
 ENV HOME=/usgs
-ENV ISISROOT=$HOME/isis3 ISIS3DATA=$HOME/data
+ENV ISISROOT=$HOME/isis3
+ENV ISIS3DATA=$HOME/data
 ENV PATH=$PATH:$ISISROOT/bin
 
 # Configure conda for `usgs` user
 # [see. https://github.com/ContinuumIO/docker-images/issues/151#issuecomment-549742754]
-RUN useradd --create-home --home-dir $HOME --shell /bin/bash usgs
+RUN addgroup --gid 1024 usgs
+RUN useradd -g 1024 --create-home --home-dir $HOME --shell /bin/bash usgs
 RUN mkdir /opt/conda/envs/usgs /opt/conda/pkgs && \
     chgrp usgs /opt/conda/pkgs && \
     chmod g+w /opt/conda/pkgs && \
@@ -26,7 +33,7 @@ RUN mkdir /opt/conda/envs/usgs /opt/conda/pkgs && \
 USER usgs
 WORKDIR $HOME
 
-# INstall ISIS through conda
+# Install ISIS through conda
 RUN conda config --add channels conda-forge --add channels usgs-astrogeology && \
     conda create -y --prefix ${ISISROOT} && \
     conda install -y --prefix ${ISISROOT} isis3
@@ -36,6 +43,9 @@ RUN rsync -azv --delete --partial \
     --exclude='dems/*.cub' \
     --exclude='testData' \
     isisdist.astrogeology.usgs.gov::isis3data/data/base $ISIS3DATA
+
+# Sync Cassini mission data
+RUN rsync -azv --delete --partial isisdist.astrogeology.usgs.gov::isisdata/data/cassini $ISIS3DATA
 
 # Remove docs
 RUN rm -rf $ISISROOT/doc $ISISROOT/docs
