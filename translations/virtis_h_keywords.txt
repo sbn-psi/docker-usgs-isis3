@@ -1,0 +1,92 @@
+dataSCET, double, {0.0, 1.0, 0.0}
+Acquisition ID, double,  {0.0, 1.0, 0.0}
+NumberOfSubslices, double,  {0.0, 1.0, 0.0}
+FirstSerialNum, double, {0.0, 1.0, 0.0}
+Data Type__Real science/Dummy, int,  {0.0, 1.0, 0.0}
+Data Type__Spectrum type, int, {0.0, 1.0, 0.0}
+Data Type__Shutter state, int, {0.0, 1.0, 0.0}
+Data Type__Compression mode, int, {0.0, 1.0, 0.0}
+Data Type__Average/summing mode, int, {0.0, 1.0, 0.0}
+Data Type__Image type, int, {0.0, 1.0, 0.0}
+ME_default HK SCET, double, {0.0, 1.0, 0.0}
+V_MODE__V-M operative mode, int, {0.0, 1.0, 0.0}
+V_MODE__V-H operative mode, int, {0.0, 1.0, 0.0}
+V_MODE__ME operative mode, int, {0.0, 1.0, 0.0}
+ME_PWR_STAT__-M power converter status, int, {0.0, 1.0, 0.0}
+ME_PWR_STAT__-H power converter status, int, {0.0, 1.0, 0.0}
+ME_PWR_STAT__-M IFE +5V power status, int, {0.0, 1.0, 0.0}
+ME_PWR_STAT__-H IFE +5V power status, int, {0.0, 1.0, 0.0}
+ME_PWR_STAT__ADC power status, int, {0.0, 1.0, 0.0}
+ME_PWR_STAT__EEPROM +5V power status, int, {0.0, 1.0, 0.0}
+ME_PWR_STAT__DPU_ID, int, {0.0, 1.0, 0.0}
+ME_PS_TEMP, double, {0.0, 1.0, 0.0}
+ME_DPU_TEMP, double, {0.0, 1.0, 0.0}
+ME_DHSU_VOLT, double, {0.0, 1.0, 0.0}
+ME_DHSU_CURR, double, {0.0, 1.0, 0.0}
+EEPROM_VOLT, double, {0.0, 1.0, 0.0} 
+IFE_ELECTR_VOLT, double, {0.0, 1.0, 0.0}
+H_ME_general HK SCET, double, {0.0, 1.0, 0.0}
+H_ECA_STAT__-H ECA status, int, {0.0, 1.0, 0.0}
+H_ECA_STAT__-H ECA power, int, {0.0, 1.0, 0.0}
+H_COOL_STAT__-H cooler mode, int, {0.0, 1.0, 0.0}
+H_COOL_STAT__-H cooler motor drv status, int, {0.0, 1.0, 0.0}
+H_COOL_STAT__-H CCE +28V power, int, {0.0, 1.0, 0.0}
+H_COOL_TIP_TEMP, double, {0.0, 1.0, 0.0}
+H_COOL_MOT_VOLT, double, {0.0, 1.0, 0.0}
+H_COOL_MOT_CURR, double, {0.0, 1.0, 0.0}
+H_CCE_SEC_VOLT, double, {0.0, 1.0, 0.0}
+H_HK_report SCET, double, {0.0, 1.0, 0.0}
+HKRQ_Int_Num, double, {0.0, 1.0, 0.0}
+HKRQ_Bias, double, {0.0, 1.0, 0.0}
+HKRQ_I_Lamp, int, {0, 9.062e-02, 0}
+HKRQ_I_Shutter, double, {0, 5.031e-01, 0}
+HKRQ_PEM_Mode, int, {0.0, 1.0, 0.0}
+HKRQ_Test_Init, int, {0.0, 1.0, 0.0}
+HK_Rq_Device/On__HK_Rq_Det/On, int, {0.0, 1.0, 0.0}
+HK_Rq_Device/On__HK_Rq_Shutter/On, int, {0.0, 1.0, 0.0}
+HK_Rq_Device/On__HK_Rq_FPAHtr/On, int, {0.0, 1.0, 0.0}
+HK_Rq_Device/On__HK_Rq_Lamp_Spect_T/On, int, {0.0, 1.0, 0.0}
+HK_Rq_Device/On__HK_Rq_Lamp_Spect_S/On, int, {0.0, 1.0, 0.0}
+HK_Rq_Device/On__HK_Rq_Lamp_Radio/On, int, {0.0, 1.0, 0.0}
+HK_Rq_Device/On__HK_Rq_Temp_Det/On, int, {0.0, 1.0, 0.0}
+HK_Rq_Device/On__HK_Rq_Status_Shutter/On, int, {0.0, 1.0, 0.0}
+HK_Rq_Device/On__HKMS_Req_during_Acq/On, int, {0.0, 1.0, 0.0}
+HKRQ_Cover__HKRq_Cover_Dir, int, {0.0, 1.0, 0.0}
+HKRQ_Cover__HKRq_Cover_Wave, int, {0.0, 1.0, 0.0}
+HKRQ_Cover__HKRq_Cover_Status, int, {0.0, 1.0, 0.0}
+HKRQ_Cover__HKRq_Cover_Step, int, {0.0, 1.0, 0.0}
+HKMS_Status__HKMs_ADC_Latchup, int, {0.0, 1.0, 0.0}
+HKMS_Status__HKMs_Shutter/Closed, int, {0.0, 1.0, 0.0}
+HKMS_Status__HKMs_Shutter/Open, int, {0.0, 1.0, 0.0}
+HKMS_Status__FPGA_HES_1_H, int, {0.0, 1.0, 0.0}
+HKMS_Status__FPGA_HES_2_H, int, {0.0, 1.0, 0.0}
+HKMS_Status__HKMs_Annealing_Limit_Flag, int, {0.0, 1.0, 0.0}
+HKMS_V_Line_Ref, double, {0.0, 1.0, 0.0}
+HKMS_Vdet_Dig, double, {0, 3.783e-4, -1.113}
+HKMS_Vdet_Ana, double, {0, 1.079e-2, -169.2}
+HKMS_V_Detcom, double, {0, 5.000e-4, -1.97}
+HKMS_V_Detadj, double, {0, 3.091e-4, 3.5e-3}
+HKMS_V+5, double, {0.0, 1.0, 0.0}
+HKMS_V+12, double, {0.0, 1.0, 0.0}
+HKMS_V+21, double, {0.0, 1.0, 0.0}
+HKMS_V-12, double, {0.0, 1.0, 0.0}
+HKMS_Temp_Vref, double, {0, 7.8e-4, 0.015}
+HKMS_Det_Temp, double, {-1.79e-6, 7.9e-3, 291.4}
+HKMS_Gnd, int, {0.0, 1.0, 0.0}
+HKMS_I_Vdet_Ana, double, {0.0, 1.0, 0.0}
+HKMS_I_Vdet_Dig, double, {0.0, 1.0, 0.0}
+HKMS_I_+5, double, {0.0, 1.0, 0.0}
+HKMS_I_+12, double, {0.0, 1.0, 0.0}
+HKMS_I_Lamp, double, {0, 3.31e-2, -1.30e-1}
+HKMS_I_Shutter/Heater, double, {0, 0.149, -19.4} 
+HKMS_Temp_Prism, double, {1.97e-7, 0.0244, 49.8}
+HKMS_Temp_Cal_S, double, {1.96e-7, 0.0245, 47.6}
+HKMS_Temp_Cal_T, double, {1.98e-7, 0.0244, 49.6} 
+HKMS_Temp_Shut, double, {1.95e-7, 0.0238,  7.3}
+HKMS_Temp_Grating, double, {1.96e-7, 0.0244, 49}
+HKMS_Temp_Objective, double, {2e-7, 0.0244, 50}
+HKMS_Temp_FPA, double, {2e-7, 0.0244, 49.4}
+HKMS_Temp_PEM , double, {-2.44e-6, 0.0783, -496.6}
+HKDH_Last_Sent_Request, int, {0.0, 1.0, 0.0}
+HKDH_Stop_Readout_Flag, int, {0.0, 1.0, 0.0}
+HKDH_Stop_Readout_Flag, int, {0.0, 1.0, 0.0}
