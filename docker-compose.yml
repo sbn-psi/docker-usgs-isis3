@@ -6,9 +6,5 @@ services:
     image: seignovert/usgs-isis3:3.9.0
     container_name: isis3
     hostname: isis3
-    volumes: 
-      - type: bind
-        source: /Users/conorkingston/workspace/pds-iapetus
-        target: /pds-iapetus
     stdin_open: true
     tty: true
