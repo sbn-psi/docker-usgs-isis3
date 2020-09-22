@@ -44,8 +44,11 @@ RUN rsync -azv --delete --partial \
     --exclude='testData' \
     isisdist.astrogeology.usgs.gov::isis3data/data/base $ISIS3DATA
 
-# Sync Cassini mission data
-RUN rsync -azv --delete --partial isisdist.astrogeology.usgs.gov::isisdata/data/cassini $ISIS3DATA
+# Sync Rosetta mission data
+RUN rsync -azv --delete --partial isisdist.astrogeology.usgs.gov::isisdata/data/rosetta $ISIS3DATA
+
+# Copy translations directory
+COPY translations/ $ISIS3DATA/rosetta/translations
 
 # Remove docs
 RUN rm -rf $ISISROOT/doc $ISISROOT/docs
